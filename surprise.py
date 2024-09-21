@@ -1,5 +1,5 @@
 import streamlit as st
-import cv2
+# import cv2
 import time
 from streamlit_lottie import st_lottie
 import requests
@@ -126,70 +126,70 @@ def starter():
 
     st_lottie(url_json)
 
-def detect_faces(person_type, lower, upper, further):
-    # Streamlit app
-    title_ph = st.empty()
-    title_ph.title("Let's do a face detection to start the surprise! " + person_type)
+# def detect_faces(person_type, lower, upper, further):
+#     # Streamlit app
+#     title_ph = st.empty()
+#     title_ph.title("Let's do a face detection to start the surprise! " + person_type)
 
-    button_ph = st.empty()
-    if button_ph.button("Start Face Detection"):
+#     button_ph = st.empty()
+#     if button_ph.button("Start Face Detection"):
 
-        # Open the camera
-        cap = cv2.VideoCapture(0)
-        if not cap.isOpened():
-            st.error("Unable to open the camera.")
-            return
+#         # Open the camera
+#         cap = cv2.VideoCapture(0)
+#         if not cap.isOpened():
+        #     st.error("Unable to open the camera.")
+        #     return
 
-        # Create a cascade classifier for face detection
-        face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+        # # Create a cascade classifier for face detection
+        # face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
-        # Start the camera loop
-        start_time = time.time()
-        progress = st.progress(0)  # Initialize the progress bar
-        with st.spinner("Analyzing..."):  # Display the "Analyzing" animation
-            frame_placeholder = st.empty()
-            while time.time() - start_time < 5:
-                # Read the frame from the camera
-                ret, frame = cap.read()
-                if not ret:
-                    st.error("Failed to read the camera frame.")
-                    break
+        # # Start the camera loop
+        # start_time = time.time()
+        # progress = st.progress(0)  # Initialize the progress bar
+        # with st.spinner("Analyzing..."):  # Display the "Analyzing" animation
+        #     frame_placeholder = st.empty()
+        #     while time.time() - start_time < 5:
+        #         # Read the frame from the camera
+        #         ret, frame = cap.read()
+        #         if not ret:
+                #     st.error("Failed to read the camera frame.")
+                #     break
 
-                # Convert the frame to grayscale for face detection
-                gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+                # # Convert the frame to grayscale for face detection
+                # gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
 
-                # Detect faces in the frame
-                faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
+                # # Detect faces in the frame
+                # faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
 
-                # Draw rectangles around the detected faces
-                for (x, y, w, h) in faces:
-                    cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+                # # Draw rectangles around the detected faces
+                # for (x, y, w, h) in faces:
+                # #     cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
-                # Display the frame with face detection
-                cv2.imshow('Face Detection', frame)
+                # # Display the frame with face detection
+                # cv2.imshow('Face Detection', frame)
 
-                frame_placeholder.image(frame, channels="RGB") #delete
+                # frame_placeholder.image(frame, channels="RGB") #delete
 
-                # Update the progress bar based on elapsed time
-                progress_value = min((time.time() - start_time) / 5, 1.0)
-                progress.progress(progress_value)
+                # # Update the progress bar based on elapsed time
+                # progress_value = min((time.time() - start_time) / 5, 1.0)
+                # progress.progress(progress_value)
 
-                # Check for keyboard interrupt
-                if cv2.waitKey(1) & 0xFF == ord('q'):
-                    break
+                # # Check for keyboard interrupt
+                # if cv2.waitKey(1) & 0xFF == ord('q'):
+                #     break
 
-        # Release the camera and close the OpenCV windows
-        cap.release()
-        cv2.destroyAllWindows()
+        # # Release the camera and close the OpenCV windows
+        # cap.release()
+        # cv2.destroyAllWindows()
 
-        # Set progress bar to 100%
-        progress.progress(1.0)
+        # # Set progress bar to 100%
+        # progress.progress(1.0)
 
-        st.markdown(
-            f"<h1 style='font-weight: bold; font-size: 26px; text-align: left;'>I am {lower}% confident that this person is a {COMPLIMENT}. {further}</h1>"
-            , unsafe_allow_html=True)
-        return True
+        # st.markdown(
+        #     f"<h1 style='font-weight: bold; font-size: 26px; text-align: left;'>I am {lower}% confident that this person is a {COMPLIMENT}. {further}</h1>"
+        #     , unsafe_allow_html=True)
+        # return True
 
 
 def start_page(main_text, url, button_text):
