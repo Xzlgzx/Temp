@@ -1,5 +1,21 @@
 import streamlit as st
 
+# Custom CSS to narrow text for mobile screens
+st.markdown(
+    """
+    <style>
+    .reportview-container .main .block-container {
+        max-width: 600px;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.title("A man’s responsibility - the story of how I found my philosophy and mojo of life")
 
 st.text('''
