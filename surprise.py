@@ -3,17 +3,41 @@ import streamlit as st
 st.title("A man’s responsibility - the story of how I found my philosophy and mojo of life")
 
 st.text('''
-  What is my pursuit of life? For the longest time, I struggled because of my upbringing. I left China for Canada at the tender age of 10, struggled to adapt because I was stubborn, didn't conform, and never enjoyed the Western way of living. Worse yet, my value system was yet to mature, and with too much pride that I was unwilling to put down, I spiralled into a vicious cycle.
+  What is my pursuit of life? For the longest time, I struggled because of my 
+  upbringing. I left China for Canada at the tender age of 10, struggled to adapt 
+  because I was stubborn, didn't conform, and never enjoyed the Western way of living. 
+  Worse yet, my value system was yet to mature, and with too much pride that I was 
+  unwilling to put down, I spiralled into a vicious cycle.
   
-  Year-by-year, I started to lose myself gradually, becoming close-minded, insincure, and pessimistic. The once worriless, happy child who had the world in front of him became an adolescent who was directionless and soulless. 
+  Year-by-year, I started to lose myself gradually, becoming close-minded, insincure,
+  and pessimistic. The once worriless, happy child who had the world in front of him 
+  became an adolescent who was directionless and soulless. 
   
-  Thanks to my good luck, my life looked just fine from the outside. But deep down, I knew something was missing. So I left Canada at the age of 23, and embarked on a journey in HK.
+  Thanks to my good luck, my life looked just fine from the outside. But deep down, 
+  I knew something was missing. So I left Canada at the age of 23, and embarked on a 
+  journey in HK.
   
-  I was overjoyed to reunite with my grandparents, with whom I had deep connection as a child. I also loved the atmosphere of China, everywhere I went. Gradually, I accepted the Chinese way of living, and found that I identify 100% as a Chinese, without any Canadian connection.
+  I was overjoyed to reunite with my grandparents, with whom I had deep connection as 
+  a child. I also loved the atmosphere of China, everywhere I went. Gradually, I 
+  accepted the Chinese way of living, and found that I identify 100% as a Chinese, 
+  without any Canadian connection.
   
-  And through immersing myself in Peking Opera, Erhu, Chinese Classics, Confucius, studying my family history, I realize what was missing in my life. Though I was always a conservative guy who never ventured into the forbidden, now I knew its basis. It is the ancient value and traditions that have cradled a great nation for thousands of years; it is the almalgamation of souls who are so celestial yet profoundly human with a beautiful vision for a better world, and ardent spirits that will forever be the lightpost even in the darkest times of humanity.   
+  And through immersing myself in Peking Opera, Erhu, Chinese Classics, Confucius, 
+  studying my family history, I realize what was missing in my life. Though I was 
+  always a conservative guy who never ventured into the forbidden, now I knew its 
+  basis. It is the ancient value and traditions that have cradled a great nation for 
+  thousands of years; it is the almalgamation of souls who are so celestial yet 
+  profoundly human with a beautiful vision for a better world, and ardent spirits 
+  that will forever be the lightpost even in the darkest times of humanity.   
   
-  Today, I wake up every morning reading Confucian verses. I remind myself everyday of the life I have, and will only work harder to maintain it. Sometimes, I wish I had just stayed in China, and never left. But without this rollercoaster of a ride, maybe I would never come to the realization today: that I will never compromise my value and beliefs for anyone, anything, in any situation, and will dedicate my life to improving myself to the point that I can be the exemplary man in a world of grand unity that Confucius once envisioned - a world where young adolescents can freely swim with elders in harmony, without apprehension.
+  Today, I wake up every morning reading Confucian verses. I remind myself everyday 
+  of the life I have, and will only work harder to maintain it. Sometimes, I wish I 
+  had just stayed in China, and never left. But without this rollercoaster of a ride, 
+  maybe I would never come to the realization today: that I will never compromise my 
+  value and beliefs for anyone, anything, in any situation, and will dedicate my life 
+  to improving myself to the point that I can be the exemplary man in a world of grand 
+  unity that Confucius once envisioned - a world where young adolescents can freely 
+  swim with elders in harmony, without apprehension.
   ''')
 # # import cv2
 # import time
