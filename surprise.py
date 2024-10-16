@@ -31,7 +31,7 @@ c.write('''
   
   And through immersing myself in Peking Opera, Erhu, Chinese Classics, Confucius, 
   studying my family history, I realize what was missing in my life. Though I was 
-  always a conservative guy who never ventured into the forbidden, now I knew its 
+  always a conservative guy who never ventured into the forbidden, now I know its 
   basis. It is the ancient value and traditions that have cradled a great nation for 
   thousands of years; it is the almalgamation of souls who are so celestial yet 
   profoundly human with a beautiful vision for a better world, and ardent spirits 
