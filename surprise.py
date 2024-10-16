@@ -1,8 +1,8 @@
 import streamlit as st
 
 st.title("A man’s responsibility - the story of how I found my philosophy and mojo of life")
-with st.container():
-  st.text('''
+
+st.text('''
   What is my pursuit of life? For the longest time, I struggled because of my upbringing. I left China for Canada at the tender age of 10, struggled to adapt because I was stubborn, didn't conform, and never enjoyed the Western way of living. Worse yet, my value system was yet to mature, and with too much pride that I was unwilling to put down, I spiralled into a vicious cycle.
   
   Year-by-year, I started to lose myself gradually, becoming close-minded, insincure, and pessimistic. The once worriless, happy child who had the world in front of him became an adolescent who was directionless and soulless. 
