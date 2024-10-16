@@ -8,7 +8,8 @@ local_css("style.css")
 
 st.title("A man’s responsibility - the story of how I found my philosophy and mojo of life")
 
-st.text('''
+c = st.container()
+c.write('''
   What is my pursuit of life? For the longest time, I struggled because of my 
   upbringing. I left China for Canada at the tender age of 10, struggled to adapt 
   because I was stubborn, didn't conform, and never enjoyed the Western way of living. 
